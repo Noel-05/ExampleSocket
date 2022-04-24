@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+
+  <div>
+    <button id="connect" onclick="conectar();">Connect</button>
+    <button id="disconnect" disabled="disabled" onclick="desconectar();">Disconnect</button>
+  </div>
+
+  <div id="conversationDiv">
+    <p>
+      <label>notice content?</label>
+    </p>
+    <p>
+      <textarea id="name" rows="5"></textarea>
+    </p>
+    <button id="sendName" onclick="sendName();">Send</button>
+    <p id="response"></p>
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.4.0/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script th:href="@{/js/prueba1.js}" src="/js/prueba1.js"></script>
+</body>
+</html>

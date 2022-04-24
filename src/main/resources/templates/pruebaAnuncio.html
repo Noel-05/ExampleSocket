@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+    <button id="connect" onclick="conectar();">Connect</button>
+    <button id="disconnect" disabled="disabled" onclick="desconectar();">Disconnect</button>
+</div>
+
+  </br></br>
+  <p style="color: black;"  id="msjNotice"></p>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.4.0/sockjs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+  <script th:href="@{/js/prueba2.js}" src="/js/prueba2.js"></script>
+</body>
+</html>
